@@ -88,4 +88,12 @@ class BadgeClass implements BadgeClassInterface
     {
         $this->color = $color;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __toString()
+    {
+        return (string) $this->translate()->getName();
+    }
 }

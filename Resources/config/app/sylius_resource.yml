@@ -6,8 +6,10 @@ sylius_resource:
                 interface: Toro\Bundle\BadgeBundle\Model\BadgeClassInterface
                 controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                 factory: Sylius\Component\Resource\Factory\TranslatableFactory
+                repository: Toro\Bundle\BadgeBundle\Doctrine\ORM\BadgeRepository
                 form:
                     default: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassType
+                    choice: Sylius\Bundle\ResourceBundle\Form\Type\ResourceChoiceType
             validation_groups:
                 default:
                     - toro
@@ -29,8 +31,10 @@ sylius_resource:
                 interface: Toro\Bundle\BadgeBundle\Model\BadgeTypeInterface
                 controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                 factory: Sylius\Component\Resource\Factory\TranslatableFactory
+                repository: Toro\Bundle\BadgeBundle\Doctrine\ORM\BadgeRepository
                 form:
                     default: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeType
+                    choice: Sylius\Bundle\ResourceBundle\Form\Type\ResourceChoiceType
             validation_groups:
                 default:
                     - toro
@@ -52,6 +56,7 @@ sylius_resource:
                 interface: Toro\Bundle\BadgeBundle\Model\BadgeItemInterface
                 controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                 factory: Sylius\Component\Resource\Factory\TranslatableFactory
+                repository: Toro\Bundle\BadgeBundle\Doctrine\ORM\BadgeRepository
                 form:
                     default: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemType
             validation_groups:

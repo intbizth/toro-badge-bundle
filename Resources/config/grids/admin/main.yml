@@ -1,2 +1,4 @@
 imports:
     - { resource: "@ToroBadgeBundle/Resources/config/grids/admin/badge_class.yml" }
+    - { resource: "@ToroBadgeBundle/Resources/config/grids/admin/badge_type.yml" }
+    - { resource: "@ToroBadgeBundle/Resources/config/grids/admin/badge_item.yml" }

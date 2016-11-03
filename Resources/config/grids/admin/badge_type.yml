@@ -1,28 +1,21 @@
 sylius_grid:
     grids:
-        toro_admin_badge_class:
+        toro_admin_badge_type:
             driver:
                 name: doctrine/orm
                 options:
-                    class: %toro.model.badge_class.class%
+                    class: %toro.model.badge_type.class%
                     repository:
                         method: createLocaledQueryBuilder
                         arguments: ["%locale%"]
             sorting:
-                code: desc
+                name: asc
 
             fields:
-                color:
-                    type: string
-                    label: Color
-                code:
-                    type: string
-                    label: Code
-                    sortable: ~
                 name:
                     type: string
                     label: Name
-                    sortable: ~
+                    sortable: translation.name
                 createdAt:
                     type: datetime
                     label: Create at

@@ -1,2 +1,8 @@
 toro_admin_badge_classes:
     resource: "@ToroBadgeBundle/Resources/config/routing/admin/badge_class.yml"
+
+toro_admin_badge_types:
+    resource: "@ToroBadgeBundle/Resources/config/routing/admin/badge_type.yml"
+
+toro_admin_badge_items:
+    resource: "@ToroBadgeBundle/Resources/config/routing/admin/badge_item.yml"

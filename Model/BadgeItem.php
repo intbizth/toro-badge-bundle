@@ -41,7 +41,7 @@ class BadgeItem implements BadgeItemInterface
     /**
      * {@inheritdoc}
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -49,7 +49,7 @@ class BadgeItem implements BadgeItemInterface
     /**
      * {@inheritdoc}
      */
-    public function getCode(): string
+    public function getCode()
     {
         return $this->code;
     }
@@ -97,7 +97,7 @@ class BadgeItem implements BadgeItemInterface
     /**
      * {@inheritdoc}
      */
-    public function getClass(): BadgeClassInterface
+    public function getClass()
     {
         return $this->class;
     }
@@ -113,7 +113,7 @@ class BadgeItem implements BadgeItemInterface
     /**
      * {@inheritdoc}
      */
-    public function getType(): BadgeTypeInterface
+    public function getType()
     {
         return $this->type;
     }

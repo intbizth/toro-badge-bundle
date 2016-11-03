@@ -46,4 +46,12 @@ class BadgeType implements BadgeTypeInterface
     {
         $this->translate()->setName($name);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __toString()
+    {
+        return (string) $this->translate()->getName();
+    }
 }
