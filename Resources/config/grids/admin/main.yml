@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@ToroBadgeBundle/Resources/config/grids/admin/badge_class.yml" }

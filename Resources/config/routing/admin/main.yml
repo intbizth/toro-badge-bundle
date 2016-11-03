@@ -1,0 +1,2 @@
+toro_admin_badge_classes:
+    resource: "@ToroBadgeBundle/Resources/config/routing/admin/badge_class.yml"

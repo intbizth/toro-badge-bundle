@@ -1,0 +1,15 @@
+toro_admin_badge_class:
+    resource: |
+        alias: toro.badge_class
+        section: admin
+        templates: ToroAdminBundle:Crud
+        except: ['show']
+        redirect: index
+        grid: toro_admin_badge_class
+        vars:
+          all:
+            templates:
+                form: ToroBadgeBundle:Admin/BadgeClass:_form_bs4.html.twig
+          index:
+            icon: ti-book
+    type: sylius.resource

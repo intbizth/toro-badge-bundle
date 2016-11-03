@@ -1,0 +1,70 @@
+sylius_resource:
+    resources:
+        toro.badge_class:
+            classes:
+                model: Toro\Bundle\BadgeBundle\Model\BadgeClass
+                interface: Toro\Bundle\BadgeBundle\Model\BadgeClassInterface
+                controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
+                factory: Sylius\Component\Resource\Factory\TranslatableFactory
+                form:
+                    default: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassType
+            validation_groups:
+                default:
+                    - toro
+            translation:
+                classes:
+                    model: Toro\Bundle\BadgeBundle\Model\BadgeClassTranslation
+                    interface: Toro\Bundle\BadgeBundle\Model\BadgeClassTranslationInterface
+                    controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
+                    factory: Sylius\Component\Resource\Factory\Factory
+                    form:
+                        default: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassTranslationType
+                validation_groups:
+                    default:
+                        - toro
+
+        toro.badge_type:
+            classes:
+                model: Toro\Bundle\BadgeBundle\Model\BadgeType
+                interface: Toro\Bundle\BadgeBundle\Model\BadgeTypeInterface
+                controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
+                factory: Sylius\Component\Resource\Factory\TranslatableFactory
+                form:
+                    default: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeType
+            validation_groups:
+                default:
+                    - toro
+            translation:
+                classes:
+                    model: Toro\Bundle\BadgeBundle\Model\BadgeTypeTranslation
+                    interface: Toro\Bundle\BadgeBundle\Model\BadgeTypeTranslationInterface
+                    controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
+                    factory: Sylius\Component\Resource\Factory\Factory
+                    form:
+                        default: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeTranslationType
+                validation_groups:
+                    default:
+                        - toro
+
+        toro.badge_item:
+            classes:
+                model: Toro\Bundle\BadgeBundle\Model\BadgeItem
+                interface: Toro\Bundle\BadgeBundle\Model\BadgeItemInterface
+                controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
+                factory: Sylius\Component\Resource\Factory\TranslatableFactory
+                form:
+                    default: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemType
+            validation_groups:
+                default:
+                    - toro
+            translation:
+                classes:
+                    model: Toro\Bundle\BadgeBundle\Model\BadgeItemTranslation
+                    interface: Toro\Bundle\BadgeBundle\Model\BadgeItemTranslationInterface
+                    controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
+                    factory: Sylius\Component\Resource\Factory\Factory
+                    form:
+                        default: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemTranslationType
+                validation_groups:
+                    default:
+                        - toro

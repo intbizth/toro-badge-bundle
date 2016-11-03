@@ -1,0 +1,38 @@
+sylius_grid:
+    grids:
+        toro_admin_badge_class:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: %toro.model.badge_class.class%
+            sorting:
+                code: desc
+
+            fields:
+                color:
+                    type: string
+                    label: Color
+                code:
+                    type: string
+                    label: Code
+                    sortable: ~
+                name:
+                    type: string
+                    label: Name
+                    sortable: ~
+                createdAt:
+                    type: datetime
+                    label: Create at
+                    sortable: ~
+                    options:
+                        format: d-m-Y H:i
+
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete
