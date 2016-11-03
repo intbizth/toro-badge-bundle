@@ -7,13 +7,14 @@ use Sylius\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Sylius\Bundle\ResourceBundle\Form\Type\ResourceTranslationsType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Toro\Bundle\CmsBundle\Form\Type\ColorPickerType;
 
 class BadgeClassType extends AbstractResourceType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('color', TextType::class, [
+            ->add('color', ColorPickerType::class, [
                 'required' => false,
                 'label' => 'Color',
             ])
