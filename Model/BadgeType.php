@@ -5,6 +5,9 @@ namespace Toro\Bundle\BadgeBundle\Model;
 use Sylius\Component\Resource\Model\TimestampableTrait;
 use Sylius\Component\Resource\Model\TranslatableTrait;
 
+/**
+ * @method BadgeItemTranslation getTranslation($local = null)
+ */
 class BadgeType implements BadgeTypeInterface
 {
     use TimestampableTrait;
@@ -36,7 +39,7 @@ class BadgeType implements BadgeTypeInterface
      */
     public function getName()
     {
-        return $this->translate()->getName();
+        return $this->getTranslation()->getName();
     }
 
     /**
@@ -44,7 +47,7 @@ class BadgeType implements BadgeTypeInterface
      */
     public function setName($name)
     {
-        $this->translate()->setName($name);
+        $this->getTranslation()->setName($name);
     }
 
     /**
@@ -52,6 +55,14 @@ class BadgeType implements BadgeTypeInterface
      */
     public function __toString()
     {
-        return (string) $this->translate()->getName();
+        return (string) $this->getTranslation()->getName();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function createTranslation()
+    {
+        return new BadgeTypeTranslation();
     }
 }
