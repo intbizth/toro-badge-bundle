@@ -12,7 +12,7 @@ class BadgeTypeType extends AbstractResourceType
     {
         $builder
             ->add('translations', ResourceTranslationsType::class, [
-                'type' => 'toro_badge_type_translation'
+                'entry_type' => BadgeTypeTranslationType::class,
             ])
         ;
     }
@@ -20,7 +20,7 @@ class BadgeTypeType extends AbstractResourceType
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getBlockPrefix()
     {
         return 'toro_badge_type';
     }

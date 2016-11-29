@@ -24,7 +24,7 @@ class BadgeItemType extends AbstractResourceType
             ])
 
             ->add('translations', ResourceTranslationsType::class, [
-                'type' => 'toro_badge_item_translation'
+                'entry_type' => BadgeItemTranslationType::class,
             ])
 
             ->addEventSubscriber(new AddCodeFormSubscriber())
@@ -34,7 +34,7 @@ class BadgeItemType extends AbstractResourceType
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getBlockPrefix()
     {
         return 'toro_badge_item';
     }

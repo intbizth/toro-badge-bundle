@@ -7,23 +7,14 @@ sylius_resource:
                 controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                 factory: Sylius\Component\Resource\Factory\TranslatableFactory
                 repository: Toro\Bundle\BadgeBundle\Doctrine\ORM\BadgeRepository
-                form:
-                    default: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassType
-                    choice: Sylius\Bundle\ResourceBundle\Form\Type\ResourceChoiceType
-            validation_groups:
-                default:
-                    - toro
+                form: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassType
             translation:
                 classes:
                     model: Toro\Bundle\BadgeBundle\Model\BadgeClassTranslation
                     interface: Toro\Bundle\BadgeBundle\Model\BadgeClassTranslationInterface
                     controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                     factory: Sylius\Component\Resource\Factory\Factory
-                    form:
-                        default: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassTranslationType
-                validation_groups:
-                    default:
-                        - toro
+                    form: Toro\Bundle\BadgeBundle\Form\Type\BadgeClassTranslationType
 
         toro.badge_type:
             classes:
@@ -32,23 +23,14 @@ sylius_resource:
                 controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                 factory: Sylius\Component\Resource\Factory\TranslatableFactory
                 repository: Toro\Bundle\BadgeBundle\Doctrine\ORM\BadgeRepository
-                form:
-                    default: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeType
-                    choice: Sylius\Bundle\ResourceBundle\Form\Type\ResourceChoiceType
-            validation_groups:
-                default:
-                    - toro
+                form: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeType
             translation:
                 classes:
                     model: Toro\Bundle\BadgeBundle\Model\BadgeTypeTranslation
                     interface: Toro\Bundle\BadgeBundle\Model\BadgeTypeTranslationInterface
                     controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                     factory: Sylius\Component\Resource\Factory\Factory
-                    form:
-                        default: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeTranslationType
-                validation_groups:
-                    default:
-                        - toro
+                    form: Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeTranslationType
 
         toro.badge_item:
             classes:
@@ -57,19 +39,11 @@ sylius_resource:
                 controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                 factory: Sylius\Component\Resource\Factory\TranslatableFactory
                 repository: Toro\Bundle\BadgeBundle\Doctrine\ORM\BadgeRepository
-                form:
-                    default: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemType
-            validation_groups:
-                default:
-                    - toro
+                form: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemType
             translation:
                 classes:
                     model: Toro\Bundle\BadgeBundle\Model\BadgeItemTranslation
                     interface: Toro\Bundle\BadgeBundle\Model\BadgeItemTranslationInterface
                     controller: Sylius\Bundle\ResourceBundle\Controller\ResourceController
                     factory: Sylius\Component\Resource\Factory\Factory
-                    form:
-                        default: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemTranslationType
-                validation_groups:
-                    default:
-                        - toro
+                    form: Toro\Bundle\BadgeBundle\Form\Type\BadgeItemTranslationType

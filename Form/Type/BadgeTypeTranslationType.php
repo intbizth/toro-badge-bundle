@@ -21,7 +21,7 @@ class BadgeTypeTranslationType extends AbstractResourceType
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getBlockPrefix()
     {
         return 'toro_badge_type_translation';
     }
