@@ -44,7 +44,7 @@ class BadgeClassChoiceType extends AbstractType
             'choices' => function (Options $options) {
                 return $this->repository->findAll();
             },
-            'choice_value' => 'code',
+            'choice_value' => 'id',
             'choice_label' => 'name',
             'choice_translation_domain' => false,
         ]);

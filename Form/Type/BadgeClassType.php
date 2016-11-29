@@ -17,11 +17,9 @@ class BadgeClassType extends AbstractResourceType
                 'required' => false,
                 'label' => 'Color',
             ])
-
             ->add('translations', ResourceTranslationsType::class, [
                 'entry_type' => BadgeClassTranslationType::class,
             ])
-
             ->addEventSubscriber(new AddCodeFormSubscriber())
         ;
     }

@@ -16,16 +16,13 @@ class BadgeItemType extends AbstractResourceType
                 'required' => true,
                 'label' => 'Class',
             ])
-
             ->add('type', BadgeTypeChoiceType::class, [
                 'required' => true,
                 'label' => 'Type',
             ])
-
             ->add('translations', ResourceTranslationsType::class, [
                 'entry_type' => BadgeItemTranslationType::class,
             ])
-
             ->addEventSubscriber(new AddCodeFormSubscriber())
         ;
     }

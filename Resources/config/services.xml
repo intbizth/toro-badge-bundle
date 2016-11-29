@@ -5,6 +5,36 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="toro.form.type.badge_class" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeClassType">
+            <argument>%toro.model.badge_class.class%</argument>
+            <argument type="collection"><argument>toro</argument></argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="toro.form.type.badge_class_translation" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeClassTranslationType">
+            <argument>%toro.model.badge_class_translation.class%</argument>
+            <argument type="collection"><argument>toro</argument></argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="toro.form.type.badge_type" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeType">
+            <argument>%toro.model.badge_type.class%</argument>
+            <argument type="collection"><argument>toro</argument></argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="toro.form.type.badge_type_translation" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeTypeTranslationType">
+            <argument>%toro.model.badge_type_translation.class%</argument>
+            <argument type="collection"><argument>toro</argument></argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="toro.form.type.badge_item" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeItemType">
+            <argument>%toro.model.badge_item.class%</argument>
+            <argument type="collection"><argument>toro</argument></argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="toro.form.type.badge_item_translation" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeItemTranslationType">
+            <argument>%toro.model.badge_item_translation.class%</argument>
+            <argument type="collection"><argument>toro</argument></argument>
+            <tag name="form.type"/>
+        </service>
         <service id="toro.form.type.badge_class_choice" class="Toro\Bundle\BadgeBundle\Form\Type\BadgeClassChoiceType">
             <argument type="service" id="toro.repository.badge_class"/>
             <tag name="form.type"/>
